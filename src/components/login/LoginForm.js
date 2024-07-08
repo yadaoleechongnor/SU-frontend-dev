@@ -51,9 +51,9 @@ export default function LoginForm({ setVisible }) {
   return (
     <div className="login_wrap">
       <div className="login_1">
-        <img src="../../icons/facebook.svg" alt="" />
+        {/* <img src="../../icons/facebook.svg" alt="" /> */}
         <span>
-          Facebook helps you connect and share with the people in your life.
+         Be a SU-social member to get all notifications and announcements
         </span>
       </div>
       <div className="login_2">
@@ -74,7 +74,7 @@ export default function LoginForm({ setVisible }) {
                 <LoginInput
                   type="text"
                   name="email"
-                  placeholder="Email address or phone number"
+                  placeholder="Email address"
                   onChange={handleLoginChange}
                 />
                 <LoginInput
@@ -85,7 +85,7 @@ export default function LoginForm({ setVisible }) {
                   bottom
                 />
                 <button type="submit" className="blue_btn">
-                  Log In
+                  Get in tuch
                 </button>
               </Form>
             )}
@@ -101,12 +101,12 @@ export default function LoginForm({ setVisible }) {
             className="blue_btn open_signup"
             onClick={() => setVisible(true)}
           >
-            Create Account
+            Create A Member
           </button>
         </div>
-        <Link to="/" className="sign_extra">
+        {/* <Link to="/" className="sign_extra">
           <b>Create a Page</b> for a celebrity, brand or business.
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

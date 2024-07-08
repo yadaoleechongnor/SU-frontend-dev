@@ -79,7 +79,7 @@ export default function Header({ page, getAllPosts }) {
         >
           {page === "friends" ? <FriendsActive /> : <Friends color={color} />}
         </Link>
-        <Link to="/" className="middle_icon hover1">
+        {/* <Link to="/" className="middle_icon hover1">
           <Watch color={color} />
           <div className="middle_notification">9+</div>
         </Link>
@@ -88,10 +88,10 @@ export default function Header({ page, getAllPosts }) {
         </Link>
         <Link to="/" className="middle_icon hover1 ">
           <Gaming color={color} />
-        </Link>
+        </Link> */}
       </div>
       <div className="header_right">
-        <Link
+        {/* <Link
           to="/profile"
           className={`profile_link hover1 ${
             page === "profile" ? "active_link" : ""
@@ -99,7 +99,7 @@ export default function Header({ page, getAllPosts }) {
         >
           <img src={user?.picture} alt="" />
           <span>{user?.first_name}</span>
-        </Link>
+        </Link> */}
         <div
           className={`circle_icon hover1 ${showAllMenu && "active_header"}`}
           ref={allmenu}
@@ -116,9 +116,9 @@ export default function Header({ page, getAllPosts }) {
 
           {showAllMenu && <AllMenu />}
         </div>
-        <div className="circle_icon hover1">
+        {/* <div className="circle_icon hover1">
           <Messenger />
-        </div>
+        </div> */}
         <div className="circle_icon hover1">
           <Notifications />
           <div className="right_notification">5</div>
